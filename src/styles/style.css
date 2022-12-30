@@ -4,8 +4,14 @@
   --red-header-color: #A91E1E;;
 }
 
+@font-face {
+  font-family: 'Gaming';
+  src: url('../fonts/batmfa__-webfont.woff') format('woff'),
+      url('../fonts/batmfa__-webfont.woff2') format('woff2');
+}
+
 * {
-  font-family: sans-serif;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +19,8 @@
 body {
   width: 100%;
   overflow-x: hidden;
-  background-color: khaki;
+  text-align: center;
+  font-family: 'Gaming';
 }
 
 h1 {
@@ -44,6 +51,7 @@ i > span {
   }
 }
 
+
 .header {
   min-height: 20vh;
   background-color: var(--white-header-color);
@@ -59,9 +67,10 @@ i > span {
 
 .moving-header > h4 {
   color: var(--white-header-color);
+  font-family: sans-serif;
   position: relative;
   left: -88%;
-  animation: move 20s linear infinite;
+  animation: move 30s linear infinite;
 }
 
 .main-header {
@@ -93,4 +102,58 @@ i > span {
   justify-content: space-around;
   font-weight: bold;
   list-style: none;
+}
+
+.main-navbar > ul > li {
+  padding-bottom: 10px;
+}
+
+.main-navbar > ul > li:hover {
+  border-bottom: 2px solid var(--black-color);
+  padding-bottom: 8px;
+}
+
+/* ------ Home ------ */
+
+.home > img {
+  width: 100%;
+  height: 80vh;
+}
+
+.home > h2 {
+  font-size: 3vw;
+  margin: 50px 0;
+  letter-spacing: 5px;
+}
+
+.sections {
+  margin: 0 auto;
+  min-height: 120vh;
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 35px;
+}
+
+.section {
+  position: relative;
+  transition: filter .15s ease;
+  cursor: pointer;
+}
+
+.section:hover {
+  filter: brightness(0.5);
+}
+
+.section > img {
+  height: 100%;
+  width: 100%;
+}
+
+.component {
+  top: 220px;
+  left: 280px;
+  color: red;
+  position: absolute;
 }
