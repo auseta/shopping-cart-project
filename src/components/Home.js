@@ -5,41 +5,47 @@ import image3 from '../images/image-3.jpg';
 import image4 from '../images/image-4.jpg';
 import image5 from '../images/image-5.jpg';
 
+
+const componentStyles = {
+  display : 'hidden'
+}
+
 const Processors = () => {
   return (
-    <div className='component'>
+    <div className='component' >
       <h3>Processors</h3>
-      <button>BUY</button>
+      <button className='component-btn' >BUY</button>
     </div>
   )
 }
 
 const Mothers = () => {
   return (
-    <div className='component'>
+    <div className='component mothers'>
       <h3>Mothers</h3>
-      <button>BUY</button>
+      <button className='component-btn'>BUY</button>
     </div>
   )
 }
 
 const VideoCards = () => {
   return (
-    <div className='component'>
+    <div className='component video-cards'>
       <h3>Video Cards</h3>
-      <button>BUY</button>
+      <button className='component-btn'>BUY</button>
     </div>    
   )
 }
 
 const RAM = () => {
   return (
-    <div className='component'>
+    <div className='component RAM'>
       <h3>RAM</h3>
-      <button>BUY</button>
+      <button className='component-btn'>BUY</button>
     </div>    
   )
 }
+
 
 const Home = () => {
 
@@ -64,8 +70,6 @@ const Home = () => {
     })
   }
 
-  console.log(sections);
-
   return (
     <div className='home'>
       <img src={ image1 } alt='hero' />
@@ -85,9 +89,12 @@ const Home = () => {
         </div>
         <div className='section' onMouseOver={ () => showLink('RAM') } onMouseOut={ () => hideLink('RAM') } >
           <img src={ image5 } alt='RAM' />
-          { sections.RAM ? <RAM /> : null }
+          { sections.RAM ? <RAM/> : null }
         </div>
       </div>
+      <h2>
+          We have the best components you need for your PC and that fit your needs. We have the best technicians to help and advise you on the assembly and maintenance of your PC.
+      </h2>
     </div>
   )
 }
