@@ -1,7 +1,13 @@
 import React from "react";
 import logo from "../images/logo.png";
+import { Link } from 'react-router-dom'
 
 const Header = ({ cart, events }) => {
+
+  const linkStyles = {
+    textDecoration : 'none',
+    color : 'inherit'
+  }
 
   return (
     <div className="header">
@@ -12,9 +18,11 @@ const Header = ({ cart, events }) => {
       <div className="main-header">
         <div className="header-name">
           <img className="logo" src={logo} alt="logo" />
-          <h1>
-            SETA<b>GAMING</b>
-          </h1>
+          <Link to='/' style={ linkStyles } >
+            <h1>
+              SETA<b>GAMING</b>
+            </h1>
+          </Link>
         </div>
         <i className="fa-sharp fa-solid fa-cart-shopping" onClick={events}>
           {cart === 0 ? null : <span>{cart}</span>}
@@ -22,9 +30,12 @@ const Header = ({ cart, events }) => {
       </div>
       <div className="main-navbar">
         <ul>
-          <li>
-            <i className="fa-sharp fa-solid fa-bag-shopping"></i>Shop
-          </li>
+          
+            <li>
+              <Link to='/shop' style={ linkStyles } >
+                <i className="fa-sharp fa-solid fa-bag-shopping"></i>Shop
+              </Link>
+            </li>
           <li>
             <i className="fa-solid fa-suitcase"></i>About Us
           </li>
