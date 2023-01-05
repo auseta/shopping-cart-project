@@ -58,6 +58,24 @@ i > span {
   }
 }
 
+@keyframes dissapearOnScreen {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-1600px);
+  }
+}
+
+@keyframes appearOnScreen {
+  0% {
+    transform: scaleX(1400px);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
