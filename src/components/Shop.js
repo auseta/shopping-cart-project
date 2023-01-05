@@ -1,21 +1,20 @@
 import React from "react";
-import components from "../data";
 
-const Shop = () => {
-  console.log(components);
+const Shop = ({ products, actions }) => {
+
   return (
-    <div className="shop">
-      {components.map((component, index) => (
+    <div className="shop" >
+      {products.map((product, index) => (
         <div className="item" key={ index }>
-          <img src={ component.img } alt="product" />
-          <h4>{component.name}</h4>
+          <img src={ product.img } alt="product" />
+          <h4>{product.name}</h4>
           <h4 className="item-price">$500</h4>
           <div className="item-buttons">
-            <button className="amount-button" >-</button>
-            <span>0</span>
-            <button className="amount-button" >+</button>
+            <button className="amount-button" onClick={ () => actions.decrement(product.name) } >-</button>
+            <span>{ product.amount }</span>
+            <button className="amount-button" onClick={ () => actions.increment(product.name) } >+</button>
           </div>
-          <button className="add-button">Add to cart</button>
+          <button className="add-button" >Add to cart</button>
         </div>
       ))}
     </div>
