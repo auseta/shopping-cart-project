@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../images/logo.png";
 import { Link } from 'react-router-dom'
 
-const Header = ({ cart, events }) => {
+const Header = () => {
 
   const linkStyles = {
     textDecoration : 'none',
@@ -24,8 +24,7 @@ const Header = ({ cart, events }) => {
             </h1>
           </Link>
         </div>
-        <i className="fa-sharp fa-solid fa-cart-shopping" onClick={events}>
-          {cart === 0 ? null : <span>{cart}</span>}
+        <i className="fa-sharp fa-solid fa-cart-shopping">
         </i>
       </div>
       <div className="main-navbar">
