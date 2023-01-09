@@ -24,8 +24,10 @@ const Header = () => {
             </h1>
           </Link>
         </div>
-        <i className="fa-sharp fa-solid fa-cart-shopping">
-        </i>
+        <Link to="/shopping-cart" style={ linkStyles } >
+          <i className="fa-sharp fa-solid fa-cart-shopping">
+          </i>
+        </Link>
       </div>
       <div className="main-navbar">
         <ul>
