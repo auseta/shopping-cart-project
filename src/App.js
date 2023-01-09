@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Footer from './components/Footer';
-import ShoppingCart from './ShoppingCart';
+import ShoppingCart from './components/ShoppingCart';
 
 
 function App() {

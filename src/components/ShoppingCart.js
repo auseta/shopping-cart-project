@@ -10,7 +10,7 @@ const ShoppingCart = ({ products }) => {
       {
         products.map( (product,index) => {
           if ( product.amount !== 0 ) {
-            return(
+            return (
               <div className='shopping-cart-product' key={ index }>
                 <h6>{ product.name } x { product.amount }</h6>
               </div>
