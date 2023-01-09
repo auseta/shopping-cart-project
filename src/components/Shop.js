@@ -14,7 +14,7 @@ const Shop = ({ products, actions }) => {
             <span>{ product.amount }</span>
             <button className="amount-button" onClick={ () => actions.increment(product.name) } >+</button>
           </div>
-          <button className="add-button" >Add to cart</button>
+          <button className="add-button" onClick={ () => actions.add(product.name) } >Add to cart</button>
         </div>
       ))}
     </div>
