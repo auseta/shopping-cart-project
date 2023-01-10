@@ -87,9 +87,9 @@ function App() {
       <div className="App">
         <Header amount={ cartProductsAmount } />
           <Routes>
-            <Route path='/' element={ <Home /> } />
-            <Route path='/shop' element={ <Shop products={ products } actions={ ACTIONS } /> }/>
-            <Route path='/shopping-cart' element={ <ShoppingCart products={ productsInCart } remove={ ACTIONS.remove } /> } />
+            <Route path='shopping-cart-project/' element={ <Home /> } />
+            <Route path='shopping-cart-project/shop' element={ <Shop products={ products } actions={ ACTIONS } /> }/>
+            <Route path='shopping-cart-project/shopping-cart' element={ <ShoppingCart products={ productsInCart } remove={ ACTIONS.remove } /> } />
           </Routes>
         <Footer />
       </div>
