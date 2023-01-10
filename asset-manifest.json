@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/shopping-cart-project/static/css/main.16bcdb75.css",
+    "main.js": "/shopping-cart-project/static/js/main.10db6ecc.js",
+    "static/media/image-5.jpg": "/shopping-cart-project/static/media/image-5.2d1a7d0a87f7d26cee0a.jpg",
+    "static/media/item1.jpg": "/shopping-cart-project/static/media/item1.12bffcbaf0f1544bbeb3.jpg",
+    "static/media/image-1.jpg": "/shopping-cart-project/static/media/image-1.4e0a30e9dee774408113.jpg",
+    "static/media/image-2.jpg": "/shopping-cart-project/static/media/image-2.5cad4ead0e2ae9c5ecea.jpg",
+    "static/media/item10.jpg": "/shopping-cart-project/static/media/item10.63e21d750f9a3c7deda3.jpg",
+    "static/media/image-4.jpg": "/shopping-cart-project/static/media/image-4.0d04ad53e729a2279948.jpg",
+    "static/media/item4.jpg": "/shopping-cart-project/static/media/item4.526b75b93da09418e303.jpg",
+    "static/media/logo.png": "/shopping-cart-project/static/media/logo.cfe2ee53e47d6a691e23.png",
+    "static/media/item12.jpg": "/shopping-cart-project/static/media/item12.7e47d6492eeeeb02ae61.jpg",
+    "static/media/image-3.jpg": "/shopping-cart-project/static/media/image-3.771bd8e5281b92fd8e7e.jpg",
+    "static/media/item9.jpg": "/shopping-cart-project/static/media/item9.999d6915f92c09f64f87.jpg",
+    "static/media/item8.jpg": "/shopping-cart-project/static/media/item8.bdfa31066b8bf1d0b33c.jpg",
+    "static/media/item2.jpg": "/shopping-cart-project/static/media/item2.30632a9495212200ee5d.jpg",
+    "static/media/item3.jpg": "/shopping-cart-project/static/media/item3.412c28fcdcbfd9a81769.jpg",
+    "static/media/item11.jpg": "/shopping-cart-project/static/media/item11.fe3dc2060947bc04317e.jpg",
+    "static/media/item5.jpg": "/shopping-cart-project/static/media/item5.22c4f7f4e4445d5a8636.jpg",
+    "static/media/item7.jpg": "/shopping-cart-project/static/media/item7.071fe756c72bf85b5ea5.jpg",
+    "static/media/batmfa__-webfont.woff": "/shopping-cart-project/static/media/batmfa__-webfont.5dfe3387132a86339f37.woff",
+    "static/media/item6.jpg": "/shopping-cart-project/static/media/item6.a78f4f16de2429082271.jpg",
+    "static/media/batmfa__-webfont.woff2": "/shopping-cart-project/static/media/batmfa__-webfont.bf0c391eea124aeae73a.woff2",
+    "index.html": "/shopping-cart-project/index.html",
+    "main.16bcdb75.css.map": "/shopping-cart-project/static/css/main.16bcdb75.css.map",
+    "main.10db6ecc.js.map": "/shopping-cart-project/static/js/main.10db6ecc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.16bcdb75.css",
+    "static/js/main.10db6ecc.js"
+  ]
+}
