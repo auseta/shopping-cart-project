@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../images/logo.png";
 import { Link } from 'react-router-dom'
 
-const Header = () => {
+const Header = ({ amount }) => {
 
   const linkStyles = {
     textDecoration : 'none',
@@ -26,6 +26,7 @@ const Header = () => {
         </div>
         <Link to="/shopping-cart" style={ linkStyles } >
           <i className="fa-sharp fa-solid fa-cart-shopping">
+            <span className={ amount !== 0 ? "cart-amount" : "" }>{ amount !== 0 ? amount : null }</span>
           </i>
         </Link>
       </div>
