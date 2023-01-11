@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import PaymentForm from './PaymentForm';
 
-const ShoppingCart = ({ products, remove }) => {
+const ShoppingCart = ({ products, remove, amount }) => {
 
   const [ totalPrice, setTotalPrice ] = useState(0);
+  const [ payment, setPayment ] = useState(false)
+
+ const handleSuccessfulPayment = () => {
+  setPayment(true)
+ }
 
   useEffect( () => {
     let updatedTotalPrice = 0
@@ -29,6 +35,14 @@ const ShoppingCart = ({ products, remove }) => {
         ))
       }
       <div className='shopping-cart-total-price'> Price to pay: ${ totalPrice }</div>
+      {
+        amount === 0 ? null : (
+          <PaymentForm handlePayment={ handleSuccessfulPayment }/>
+        )
+      }
+      {
+        payment && amount ? <h3 style={ {color: 'green', marginBottom: '30px'} } >Successful payment!</h3> : null
+      }
     </div>
   )
 }
