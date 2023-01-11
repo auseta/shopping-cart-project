@@ -89,7 +89,7 @@ function App() {
           <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/shop' element={ <Shop products={ products } actions={ ACTIONS } /> }/>
-            <Route path='/shopping-cart' element={ <ShoppingCart products={ productsInCart } remove={ ACTIONS.remove } /> } />
+            <Route path='/shopping-cart' element={ <ShoppingCart products={ productsInCart } amount={ cartProductsAmount } remove={ ACTIONS.remove } /> } />
           </Routes>
         <Footer />
       </div>
