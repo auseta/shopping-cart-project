@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import './styles/style.css';
 import DATA from './data/data';
 import shoppingCartProductsData from './data/shoppingCartProductsData';
@@ -83,17 +83,17 @@ function App() {
   }
 
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Header amount={ cartProductsAmount } />
           <Routes>
-            <Route path='shopping-cart-project/' element={ <Home /> } />
-            <Route path='shopping-cart-project/shop' element={ <Shop products={ products } actions={ ACTIONS } /> }/>
-            <Route path='shopping-cart-project/shopping-cart' element={ <ShoppingCart products={ productsInCart } remove={ ACTIONS.remove } /> } />
+            <Route path='/' element={ <Home /> } />
+            <Route path='/shop' element={ <Shop products={ products } actions={ ACTIONS } /> }/>
+            <Route path='/shopping-cart' element={ <ShoppingCart products={ productsInCart } remove={ ACTIONS.remove } /> } />
           </Routes>
         <Footer />
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
