@@ -424,6 +424,8 @@ i > .cart-amount {
     font-size: 10px;
   }
 
+  /* ------ home ------ */
+
   .home {
     min-height: 0;
   }
@@ -447,5 +449,27 @@ i > .cart-amount {
     max-width: 100%;
   }
 
+  /* ------ shopping cart ------ */
+
+  .shopping-cart-product {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+  }
+
+  .shopping-cart-product > i {
+    font-size: 10px;
+  }
+
+  /* ------ footer ------ */
+
+  .footer {
+    min-height: 10vh;
+    font-size: 10px;
+  }
+
+  .footer i {
+    font-size: 15px;
+  }
 
 }
