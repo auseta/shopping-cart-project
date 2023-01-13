@@ -5,48 +5,6 @@ import image3 from '../images/image-3.jpg';
 import image4 from '../images/image-4.jpg';
 import image5 from '../images/image-5.jpg';
 
-
-const componentStyles = {
-  display : 'hidden'
-}
-
-const Processors = () => {
-  return (
-    <div className='component' >
-      <h3>Processors</h3>
-      <button className='component-btn' >BUY</button>
-    </div>
-  )
-}
-
-const Mothers = () => {
-  return (
-    <div className='component mothers'>
-      <h3>Mothers</h3>
-      <button className='component-btn'>BUY</button>
-    </div>
-  )
-}
-
-const VideoCards = () => {
-  return (
-    <div className='component video-cards'>
-      <h3>Video Cards</h3>
-      <button className='component-btn'>BUY</button>
-    </div>    
-  )
-}
-
-const RAM = () => {
-  return (
-    <div className='component RAM'>
-      <h3>RAM</h3>
-      <button className='component-btn'>BUY</button>
-    </div>    
-  )
-}
-
-
 const Home = () => {
 
   const [sections, setSections] = useState({
@@ -72,27 +30,23 @@ const Home = () => {
 
   return (
     <div className='home'>
-      <img src={ image1 } alt='hero' />
-      <h2>GAMING CULTURE SINCE 2021</h2>
-      <div className='sections'>
-        <div className='section' onMouseOver={ () => showLink('processors') } onMouseOut={ () => hideLink('processors') }  >
-          <img src={ image2 } alt='processors' />
-          { sections.processors ? <Processors /> : null }
+      <img className='home__img' src={ image1 } alt='hero' />
+      <h2 className='home__h2' >GAMING CULTURE SINCE 2021</h2>
+      <div className='home__section'>
+        <div className='home__article' onMouseOver={ () => showLink('processors') } onMouseOut={ () => hideLink('processors') }  >
+          <img className='home__img--article' src={ image2 } alt='processors' />
         </div>
-        <div className='section' onMouseOver={ () => showLink('videoCards') } onMouseOut={ () => hideLink('videoCards') } >
-          <img src={ image3 } alt='video-cards' />
-          { sections.videoCards ? <VideoCards /> : null }
+        <div className='home__article' onMouseOver={ () => showLink('videoCards') } onMouseOut={ () => hideLink('videoCards') } >
+          <img className='home__img--article' src={ image3 } alt='video-cards' />
         </div>
-        <div className='section'  onMouseOver={ () => showLink('mothers') } onMouseLeave={ () => hideLink('mothers') }>
-          <img src={ image4 } alt='mothers' />
-          { sections.mothers ? <Mothers /> : null }
+        <div className='home__article'  onMouseOver={ () => showLink('mothers') } onMouseLeave={ () => hideLink('mothers') }>
+          <img className='home__img--article' src={ image4 } alt='mothers' />
         </div>
-        <div className='section' onMouseOver={ () => showLink('RAM') } onMouseOut={ () => hideLink('RAM') } >
-          <img src={ image5 } alt='RAM' />
-          { sections.RAM ? <RAM/> : null }
+        <div className='home__article' onMouseOver={ () => showLink('RAM') } onMouseOut={ () => hideLink('RAM') } >
+          <img className='home__img--article' src={ image5 } alt='RAM' />
         </div>
       </div>
-      <h2>
+      <h2 className='home__h2' >
           We have the best components you need for your PC and that fit your needs. We have the best technicians to help and advise you on the assembly and maintenance of your PC.
       </h2>
     </div>
