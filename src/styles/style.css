@@ -18,10 +18,14 @@
 }
 
 button {
+  font-family: "Gaming";
+  background-color: var(--yellow-color);
+  border: 3px solid var(--black-color);
+  margin-top: 5px;
+  padding: 5px 0;
+  width: 10vw;
   cursor: pointer;
   font-weight: bold;
-  font-size: 14px;
-  font-family: 'Gaming';
 }
 
 body {
@@ -29,27 +33,6 @@ body {
   text-align: center;
   font-family: "Gaming";
   overflow-x: hidden;
-}
-
-h1 {
-  font-weight: 500;
-}
-
-i {
-  position: relative;
-  margin-right: 20px;
-  font-size: 25px;
-}
-
-i > .cart-amount {
-  position: absolute;
-  left: 25px;
-  bottom: -10px;
-  background-color: var(--red-header-color);
-  color: var(--white-header-color);
-  border-radius: 50%;
-  font-size: .8vw;
-  padding: 6px 6px;
 }
 
 @keyframes move {
@@ -101,7 +84,7 @@ i > .cart-amount {
   background-color: var(--white-header-color);
 }
 
-.moving-header {
+.header__advertisement {
   width: 100%;
   position: relative;
   display: flex;
@@ -112,7 +95,7 @@ i > .cart-amount {
   overflow-x: hidden;
 }
 
-.moving-header > h4 {
+.header__h4 {
   position: absolute;
   color: var(--white-header-color);
   font-family: sans-serif;
@@ -121,7 +104,7 @@ i > .cart-amount {
   animation: move 30s linear infinite;
 }
 
-.main-header {
+.header__main {
   display: flex;
   min-height: 15vh;
   align-items: center;
@@ -131,22 +114,45 @@ i > .cart-amount {
   padding-left: 100px;
 }
 
-.header-name {
+.header__title {
   display: flex;
   align-items: center;
 }
 
-.logo {
+.header__img {
   max-width: 60px;
   margin-right: 5px;
 }
-.main-navbar {
-  display: flex;
-  align-items: center;
-  min-height: calc(30vh - 8vh - 15vh);
+
+.header__h1 {
+  font-weight: 500;
 }
 
-.main-navbar > ul {
+.header__i {
+  position: relative;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.header__span {
+  position: absolute;
+  left: 25px;
+  bottom: -10px;
+  background-color: var(--red-header-color);
+  color: var(--white-header-color);
+  border-radius: 50%;
+  font-size: .8vw;
+  padding: 6px 6px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  min-height: 10vh;
+}
+
+.header__ul {
   display: flex;
   width: 100%;
   justify-content: space-around;
@@ -154,13 +160,13 @@ i > .cart-amount {
   list-style: none;
 }
 
-.main-navbar > ul > li {
+.header__li {
   padding-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-.main-navbar > ul > li:hover {
+.header__li:hover {
   border-bottom: 2px solid var(--black-color);
   padding-bottom: 8px;
 }
@@ -171,19 +177,19 @@ i > .cart-amount {
   min-height: 300vh;
 }
 
-.home > img {
+.home__img {
   width: 100%;
   height: 80vh;
 }
 
-.home > h2 {
+.home__h2 {
   font-size: 3vw;
   margin: 50px 100px;
   letter-spacing: 5px;
   line-height: 60px;
 }
 
-.sections {
+.home__section {
   margin: 0 auto;
   min-height: 120vh;
   max-width: 90vw;
@@ -193,64 +199,18 @@ i > .cart-amount {
   gap: 35px;
 }
 
-.section {
+.home__article {
   position: relative;
   transition: filter 0.15s ease;
 }
 
-.section:hover {
+.home__article:hover {
   filter: contrast(1.5);
 }
 
-.section > img {
+.home__img--article {
   height: 100%;
   width: 100%;
-}
-
-.component {
-  display: hidden;
-  top: 220px;
-  letter-spacing: 5px;
-  left: 150px;
-  position: absolute;
-}
-
-.component:hover {
-  display: block;
-  animation: appear 0.2s ease forwards;
-}
-
-.component:not(:hover) {
-  animation: dissapear 0.2s ease forwards;
-}
-
-.component > h3 {
-  font-size: 3vw;
-  -webkit-text-stroke: 2px var(--black-color);
-  color: var(--yellow-color);
-  text-shadow: 0px 1px 1px 0px var(--black-color);
-}
-
-.mothers {
-  left: 200px;
-}
-
-.video-cards {
-  left: 140px;
-}
-
-.RAM {
-  left: 280px;
-}
-
-.component-btn {
-  font-family: "Gaming";
-  background-color: var(--yellow-color);
-  border: 3px solid var(--black-color);
-  margin-top: 5px;
-  padding: 5px 0;
-  width: 10vw;
-  cursor: pointer;
 }
 
 /* ------ Footer ------ */
@@ -264,14 +224,14 @@ i > .cart-amount {
   background-color: rgb(0, 0, 0);
 }
 
-.social-media-links {
+.footer__links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 65px;
+  gap: 100px;
 }
 
-.social-media-links > i {
+.footer__i {
   font-size: 35px;
 }
 
@@ -434,43 +394,43 @@ form > button {
 
 @media (max-width: 360px) {
   
-  .moving-header {
+  .header__advertisement {
     min-height: 5vh;
     font-size: 10px;
     gap: 50px;
     width: 101%;
   }
 
-  .moving-header > h4 {
+  .header__h4 {
     left: -98%;
     animation: move 30s linear infinite;
   }
 
-  .logo {
+  .header__img {
     width:30px;
   }
 
-  h1 {
+  .header__h1 {
     font-size: 20px;
   }
 
-  i {
+  .header__i {
     font-size: 15px;
     margin-right: 10px;
   }
 
-  .main-header {
+  .header__main {
     min-height: 10vh;
     padding: 0 30px;
   }
 
-  i > .cart-amount {
+  .header__span {
     font-size: 8px;
     left: 15px;
     padding: 4px 7px;
   }
 
-  .main-navbar {
+  .header__nav {
     min-height: 5vh;
     font-size: 10px;
   }
@@ -481,22 +441,22 @@ form > button {
     min-height: 0;
   }
 
-  .home > img {
+  .home__img {
     max-height: 30vh;
   }
 
-  .home > h2 {
+  .home__h2 {
     margin: 20px 20px;
     line-height: 25px;
   }
 
-  .sections {
+  .home__section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .section > img {
+  .home__img--article {
     max-width: 100%;
   }
 
@@ -548,7 +508,11 @@ form > button {
     font-size: 10px;
   }
 
-  .footer i {
+  .footer__links {
+    gap: 55px;
+  }
+
+  .footer__i {
     font-size: 15px;
   }
 
