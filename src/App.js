@@ -7,7 +7,8 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Footer from './components/Footer';
-import ShoppingCart from './components/ShoppingCart';
+import Cart from './components/Cart';
+
 
 
 function App() {
@@ -89,7 +90,7 @@ function App() {
           <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/shop' element={ <Shop products={ products } actions={ ACTIONS } /> }/>
-            <Route path='/shopping-cart' element={ <ShoppingCart products={ productsInCart } amount={ cartProductsAmount } remove={ ACTIONS.remove } /> } />
+            <Route path='/shopping-cart' element={ <Cart products={ productsInCart } amount={ cartProductsAmount } remove={ ACTIONS.remove } /> } />
           </Routes>
         <Footer />
       </div>
