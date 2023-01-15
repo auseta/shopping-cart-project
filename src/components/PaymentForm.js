@@ -2,7 +2,7 @@ import React from 'react';
 
 const PaymentForm = ({ handlePayment }) => {
   return(
-    <form className='form' onSubmit={ handlePayment } >
+    <form className='form' onSubmit={ (e) => handlePayment(e) } >
       <ul className='form__ul' >
         <li className="form__li" >
           <div className="form__div--li" >
@@ -35,7 +35,7 @@ const PaymentForm = ({ handlePayment }) => {
               <option value="new-york" >New York</option>
               <option value="baltimore" >Baltimore</option>
               <option value="chicago" >Chicago</option>
-              <option value="oklahoma" selected >Oklahoma</option>
+              <option value="oklahoma" >Oklahoma</option>
               <option value="detroit" >Detroit</option>
               <option value="san-diego" >San Diego</option>
             </select>
