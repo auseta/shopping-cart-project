@@ -10,7 +10,6 @@ import Footer from './components/Footer';
 import Cart from './components/Cart';
 
 
-
 function App() {
 
   const [ productsInCart, setProductsInCart ] = useState(shoppingCartProductsData);
@@ -85,7 +84,7 @@ function App() {
 
   return (
     <HashRouter>
-      <div className="App">
+      <div className="app">
         <Header amount={ cartProductsAmount } />
           <Routes>
             <Route path='/' element={ <Home /> } />
