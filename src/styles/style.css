@@ -335,6 +335,11 @@ button {
   font-size: 35px;
 }
 
+.footer__a {
+  text-decoration: none;
+  color: var(--white-header-color);
+}
+
 /* ------ Shop ------ */
 
 .shop {
