@@ -36,7 +36,7 @@ const Header = ({ amount }) => {
     <div className="header">
       <div className="header__advertisement">
         <h4 className="header__h4" >FREE SHIPPING OVER $500.00</h4>
-        <h4 className="header__h4" >UP TO 6 INSTALLMENTS WITHOUT INTEREST ON CLOTHES</h4>
+        <h4 className="header__h4" >UP TO 6 INSTALLMENTS WITHOUT INTEREST ON THE PURCHASE OF 4 OR MORE PRODUCTS</h4>
       </div>
       <div className="header__main">
         <div className="header__title">
