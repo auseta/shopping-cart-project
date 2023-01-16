@@ -19,17 +19,6 @@
   padding: 0;
 }
 
-button {
-  font-family: "Gaming";
-  background-color: var(--yellow-color);
-  border: 3px solid var(--black-color);
-  padding: 5px 15px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 15px;
-  width: 150px;
-}
-
 html {
   font-family: "Gaming";
   overflow-x: hidden;
@@ -41,45 +30,20 @@ body {
   overflow-x: hidden;
 }
 
+button {
+  font-family: "Gaming";
+  background-color: var(--yellow-color);
+  border: 3px solid var(--black-color);
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 15px;
+  width: 150px;
+}
+
 @keyframes move {
   0% {
     left: 100%;
-  }
-}
-
-@keyframes dissapearOnScreen {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-1600px);
-  }
-}
-
-@keyframes appearOnScreen {
-  0% {
-    transform: scaleX(1400px);
-  }
-  100% {
-    transform: scaleX(0);
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes dissapear {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
@@ -107,7 +71,7 @@ body {
   min-height: 20vh;
   background-color: var(--white-header-color);
   position: sticky;
-  top: 0px;
+  top: 0;
 }
 
 .header__advertisement {
@@ -118,15 +82,13 @@ body {
   align-items: center;
   background-color: var(--black-color);
   min-height: 8vh;
-  overflow-x: hidden;
 }
 
 .header__h4 {
-  position: absolute;
   color: var(--white-header-color);
   font-family: sans-serif;
   position: relative;
-  left: -88%;
+  left: -100%;
   animation: move 30s linear infinite;
 }
 
@@ -679,5 +641,4 @@ body {
   .footer__i {
     font-size: 20px;
   }
-
 }
