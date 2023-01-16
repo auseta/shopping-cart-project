@@ -6,9 +6,10 @@ const Cart = ({ products, remove, amount }) => {
   const [ totalPrice, setTotalPrice ] = useState(0);
   const [ payment, setPayment ] = useState(false)
 
- const handleSuccessfulPayment = () => {
-  setPayment(true)
- }
+  const handleSuccessfulPayment = (e) => {
+    e.preventDefault()
+    setPayment(true)
+   }
 
   useEffect( () => {
     let updatedTotalPrice = 0

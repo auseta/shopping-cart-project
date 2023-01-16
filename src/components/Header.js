@@ -71,7 +71,7 @@ const Header = ({ amount }) => {
           <span className="header__span--mobile" ></span>
           <span className="header__span--mobile" ></span>
           <span className="header__span--mobile" ></span>
-          <MobileList state={ handleMenuDisplay } />
+          <MobileList state={ handleMenuDisplay } linkStyles={ linkStyles } />
         </div>
       </div>
     </div>
